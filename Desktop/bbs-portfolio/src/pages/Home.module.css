@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.mainContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.heading {
+  margin: -4rem 0 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.orangeBubbleContainer {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+}
+
+.orangeBubble {
+  max-width: 920px;
+  height: 600px;
+  position: absolute;
+  top: 2rem;
+  left: -130px;
+  transform: scaleY(-1) rotate(8deg);
+}
+
+.orangeBubbleText {
+  position: relative;
+  top: 15.75rem;
+  left: 2rem;
+  color: #222222;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 2rem;
+  min-width: 450px;
+}
+
+.polaroidContainer {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+}
+
+.nameTag {
+  max-width: 450px;
+  position: absolute;
+  top: -35px;
+  right: 5rem;
+}
+
+.polaroid {
+  max-width: 550px;
+  position: relative;
+  top: -70px;
+  right: 5rem;
+}
