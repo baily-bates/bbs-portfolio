@@ -175,24 +175,24 @@ html {
   .collectSwapTab {
     position: absolute;
     left: -15rem;
-    top: -31rem;
+    top: -32rem;
   }
 
   .cashConverterTab {
     position: absolute;
     left: 15rem;
-    top: -32.8rem;
+    top: -33.8rem;
   }
 
   .spotifyTab {
     position: absolute;
-    top: -13rem;
+    top: -14rem;
     left: 15rem;
   }
 
   .devBlogTab {
     position: absolute;
-    top: -11.2rem;
+    top: -12.2rem;
     left: -15.5rem;
   }
 }
