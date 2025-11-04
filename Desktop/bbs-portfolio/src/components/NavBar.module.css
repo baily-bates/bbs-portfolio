@@ -7,16 +7,17 @@
 }
 
 .navLogo img {
-  width: 115px;
-  height: 115px;
+  width: 90px;
+  height: 90px;
   position: relative;
   top: -2rem;
+  right: 3rem;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 0.8rem;
   margin: 0.5rem;
   padding: 0;
 }
@@ -26,8 +27,9 @@
   color: #777320;
   transition: color 0.3s ease;
   position: relative;
-  top: -60px;
-  right: -40px;
+  top: -3.2rem;
+  left: -2rem;
+  font-size: 0.875rem;
 }
 
 .navLinks li a:hover {
@@ -37,4 +39,66 @@
 
 .active-link {
   color: #ffffff;
+}
+
+@media (min-width: 370px) {
+  .navLogo img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .navLinks li a {
+    font-family: "Boldonse", system-ui;
+    color: #777320;
+    transition: color 0.3s ease;
+    position: relative;
+    top: -3.2rem;
+    left: -0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .navLogo img {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    top: -2rem;
+    right: 3rem;
+  }
+
+  .navLinks {
+    gap: 1rem;
+  }
+
+  .navLinks li a {
+    position: relative;
+    top: -3rem;
+    left: -0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .navLogo img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .navLinks {
+    gap: 1.3rem;
+  }
+
+  .navLinks li a {
+    position: relative;
+    top: -3rem;
+    left: 2rem;
+    font-size: 1.4rem;
+  }
 }
