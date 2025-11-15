@@ -37,6 +37,12 @@ html {
   width: 650px;
   height: 340px;
   display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tab img:hover {
+  transform: scale(1.05);
 }
 
 .collectSwapTab {
@@ -63,10 +69,47 @@ html {
   left: 0.5rem;
 }
 
+.line {
+  display: inline-block;
+  width: 70px;
+  height: 5px;
+  background-color: #b44819;
+  margin: 0 15px;
+  vertical-align: middle;
+}
 .heading {
   position: relative;
   top: -3rem;
   left: -2rem;
+}
+
+.projectDetails {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #333;
+  padding: 2rem 2.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.projectLink {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  color: #b44819;
+  border: 1px solid #b44819;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.projectName {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #b44819;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 600px) {

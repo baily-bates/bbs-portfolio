@@ -6,67 +6,513 @@ html {
 }
 
 .mainContainer {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 2rem;
-  position: relative;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading {
-  margin: -4rem 0 2rem 0;
-  font-size: 3rem;
   text-align: center;
+  font-size: 2.4rem;
+  width: 90%;
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #b44819;
+  width: 215px;
+  line-height: 1.2;
+  font-weight: 700;
+  position: relative;
+  left: -20%;
+  top: -4rem;
 }
 
 .flexContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+}
+
+.polaroidContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  justify-items: center;
+}
+
+.polaroid {
+  width: 480px;
+  display: block;
+  margin: 0 auto;
   position: relative;
+  left: -12.5rem;
+  top: -6rem;
+}
+
+.nameTag {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  position: relative;
+  top: -14rem;
+  right: 7rem;
+}
+
+.orangeBubbleContainer {
+  order: 2;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+}
+
+.orangeBubble {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: -22rem;
+  left: -7.2rem;
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  .heading {
+    position: relative;
+    left: -21%;
+    top: -4rem;
+  }
+
+  .polaroid {
+    position: relative;
+    left: -11rem;
+    top: -6rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 499px) {
+  .heading {
+    position: relative;
+    left: -22%;
+    top: -4rem;
+  }
+
+  .polaroid {
+    width: 480px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: -9.5rem;
+    top: -6rem;
+  }
+
+  .orangeBubble {
+    width: 680px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -24rem;
+    left: -7rem;
+  }
+
+  .orangeBubbleText {
+    font-size: 0.5rem;
+    line-height: 1.5;
+    color: #222;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.9rem;
+    width: 75%;
+    max-width: 95%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -12.4rem;
+    right: 5.5rem;
+    min-width: 230px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 550px) {
+  .heading {
+    font-size: 2.8rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 3px solid #b44819;
+    width: 440px;
+    position: relative;
+    left: -10%;
+  }
+
+  .polaroid {
+    width: 480px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: -9.5rem;
+    top: -6rem;
+  }
+
+  .nameTag {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    position: relative;
+    top: -14rem;
+    right: 7rem;
+  }
+
+  .orangeBubble {
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -24rem;
+    left: -7.5rem;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 600px) {
+  .heading {
+    font-size: 2.8rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 3px solid #b44819;
+    width: 440px;
+    position: relative;
+    left: -8%;
+  }
+
+  .polaroid {
+    left: -8.5rem;
+  }
+
+  .nameTag {
+    top: -14rem;
+    right: 5rem;
+  }
+
+  .orangeBubble {
+    width: 750px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -24rem;
+    left: -7.5rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 650px) {
+  .heading {
+    font-size: 2.8rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 3px solid #b44819;
+    width: 440px;
+    position: relative;
+    left: 0%;
+  }
+
+  .polaroid {
+    width: 520px;
+    left: -7.5rem;
+  }
+
+  .nameTag {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    position: relative;
+    top: -14rem;
+    right: 4rem;
+  }
+
+  .orangeBubbleContainer {
+    order: 2;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+    margin: 0.5rem 0 4rem 0;
+  }
+
+  .orangeBubble {
+    width: 850px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -25.5rem;
+    left: -7.5rem;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 700px) {
+  .heading {
+    font-size: 2.8rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 3px solid #b44819;
+    width: 440px;
+    position: relative;
+    left: 0%;
+  }
+
+  .polaroid {
+    width: 520px;
+    left: -8rem;
+  }
+
+  .nameTag {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    position: relative;
+    top: -14rem;
+    right: 4rem;
+  }
+
+  .orangeBubbleContainer {
+    order: 2;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+    margin: 0 0 6rem 0;
+  }
+
+  .orangeBubble {
+    width: 920px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -25.5rem;
+    left: -8.5rem;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+  .heading {
+    font-size: 3rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 3px solid #b44819;
+    width: 470px;
+    position: relative;
+    left: 0%;
+  }
+
+  .polaroid {
+    width: 540px;
+    left: -8.5rem;
+  }
+
+  .nameTag {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    position: relative;
+    top: -14rem;
+    right: 4rem;
+  }
+
+  .orangeBubbleContainer {
+    order: 2;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+    margin: -1.5rem 0 9rem 0;
+  }
+
+  .orangeBubble {
+    width: 980px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -25.5rem;
+    left: -10rem;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+  .heading {
+    font-size: 3.3rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 3px solid #b44819;
+    width: 520px;
+    position: relative;
+    left: 0%;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    margin-top: 4rem;
+  }
+
+  .orangeBubbleContainer {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .orangeBubble {
+    width: 750px;
+    position: relative;
+    top: -6rem;
+    left: -16rem;
+  }
+
+  .polaroidContainer {
+    flex: 1;
+    max-width: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .polaroid {
+    max-width: 550px;
+    position: relative;
+    top: -11rem;
+    left: 9rem;
+  }
+
+  .nameTag {
+    width: 400px;
+    position: relative;
+    top: -18rem;
+    left: 20rem;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1250px) {
+  .heading {
+    font-size: 3.8rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 4px solid #b44819;
+    width: 600px;
+    position: relative;
+    left: 0%;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    margin-top: 4rem;
+  }
+
+  .orangeBubbleContainer {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .orangeBubble {
+    width: 950px;
+    position: relative;
+    top: -6rem;
+    left: -16rem;
+  }
+
+  .polaroidContainer {
+    flex: 1;
+    max-width: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .polaroid {
+    width: 510px;
+    position: relative;
+    top: -10rem;
+    left: 14rem;
+  }
+
+  .nameTag {
+    width: 410px;
+    position: relative;
+    top: -18rem;
+    left: 24rem;
+  }
+}
+
+.heading {
+  font-size: 3.8rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 4px solid #b44819;
+  width: 600px;
+  position: relative;
+  left: 0%;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  margin-top: 4rem;
 }
 
 .orangeBubbleContainer {
   position: relative;
   flex: 1;
   max-width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .orangeBubble {
-  max-width: 920px;
-  height: 600px;
-  position: absolute;
-  top: 2rem;
-  left: -130px;
-  transform: scaleY(-1) rotate(8deg);
-}
-
-.orangeBubbleText {
+  width: 1000px;
   position: relative;
-  top: 15.75rem;
-  left: 2rem;
-  color: #222222;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  padding: 2rem;
-  min-width: 450px;
+  top: -6.5rem;
+  left: -16rem;
 }
 
 .polaroidContainer {
-  position: relative;
   flex: 1;
-  max-width: 50%;
-}
-
-.nameTag {
-  max-width: 450px;
-  position: absolute;
-  top: -35px;
-  right: 5rem;
+  max-width: 45%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .polaroid {
-  max-width: 550px;
+  width: 510px;
   position: relative;
-  top: -70px;
-  right: 5rem;
+  top: -10rem;
+  left: 16rem;
+}
+
+.nameTag {
+  width: 410px;
+  position: relative;
+  top: -18rem;
+  left: 27rem;
 }

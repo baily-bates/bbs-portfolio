@@ -1,0 +1,40 @@
+.blackBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.closeButton {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.closeButton:hover {
+  color: #b44819;
+}
