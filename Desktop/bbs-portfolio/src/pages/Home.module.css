@@ -18,18 +18,28 @@ html {
 
 .heading {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   width: 90%;
   margin: 1rem auto;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #b44819;
-  width: 215px;
+  padding-bottom: 0.6rem;
+  border-bottom: 4px solid #b44819;
+  width: 320px;
+  text-align: center;
   line-height: 1.2;
   font-weight: 700;
   position: relative;
-  left: -20%;
+  left: -18%;
   top: -4rem;
 }
+
+/* .line {
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background-color: #b44819;
+  margin: 0 15px;
+  vertical-align: middle;
+} */
 
 .flexContainer {
   display: flex;
@@ -49,21 +59,21 @@ html {
 }
 
 .polaroid {
-  width: 480px;
+  width: 430px;
   display: block;
   margin: 0 auto;
   position: relative;
-  left: -12.5rem;
+  left: -10rem;
   top: -6rem;
 }
 
 .nameTag {
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
   display: block;
   position: relative;
-  top: -14rem;
-  right: 7rem;
+  top: -13.5rem;
+  right: 6rem;
 }
 
 .orangeBubbleContainer {
@@ -76,12 +86,50 @@ html {
 }
 
 .orangeBubble {
-  width: 600px;
+  width: 560px;
   display: block;
   margin: 0 auto;
   position: absolute;
   top: -22rem;
-  left: -7.2rem;
+  left: -6.5rem;
+}
+
+.jobs {
+  order: 3;
+  color: #222;
+  font-family: "Boldonse", system-ui;
+  font-size: 0.55rem;
+  display: flex;
+}
+
+.prodDesign {
+  position: relative;
+  top: -8rem;
+  right: 3rem;
+}
+
+.creativeTech {
+  position: relative;
+  right: 4.5rem;
+  top: -4.5rem;
+}
+
+.frontDev {
+  position: relative;
+  top: -1rem;
+  right: 4.5rem;
+}
+
+.uIDesigner {
+  position: relative;
+  top: -4rem;
+  right: 4rem;
+}
+
+.webDev {
+  position: relative;
+  top: -7rem;
+  right: 3.5rem;
 }
 
 /* Breakpoints Start */
@@ -89,26 +137,84 @@ html {
 @media (min-width: 400px) and (max-width: 450px) {
   .heading {
     position: relative;
-    left: -21%;
+    left: -18%;
     top: -4rem;
+  }
+
+  .orangeBubble {
+    width: 630px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -22.5rem;
+    left: -6.5rem;
   }
 
   .polaroid {
     position: relative;
-    left: -11rem;
+    left: -8rem;
     top: -6rem;
+  }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.55rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: relative;
+    top: -7rem;
+    right: 3.3rem;
+  }
+
+  .creativeTech {
+    position: relative;
+    right: 5.5rem;
+    top: -3.5rem;
+  }
+
+  .frontDev {
+    position: relative;
+    top: -0.8rem;
+    right: 4.5rem;
+  }
+
+  .uIDesigner {
+    position: relative;
+    top: -3rem;
+    right: 4rem;
+  }
+
+  .webDev {
+    position: relative;
+    top: -6rem;
+    right: 3.5rem;
   }
 }
 
 @media (min-width: 451px) and (max-width: 499px) {
   .heading {
     position: relative;
+    font-size: 2.3rem;
+    max-width: 700px;
     left: -22%;
     top: -4rem;
   }
 
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
+
   .polaroid {
-    width: 480px;
+    width: 450px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -117,31 +223,49 @@ html {
   }
 
   .orangeBubble {
-    width: 680px;
+    width: 670px;
     display: block;
     margin: 0 auto;
     position: absolute;
-    top: -24rem;
+    top: -23rem;
     left: -7rem;
   }
-
-  .orangeBubbleText {
-    font-size: 0.5rem;
-    line-height: 1.5;
+  .jobs {
+    order: 3;
     color: #222;
-    text-align: center;
-    margin-top: 1rem;
-    padding: 0.9rem;
-    width: 75%;
-    max-width: 95%;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: -12.4rem;
-    right: 5.5rem;
-    min-width: 230px;
-    z-index: 10;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.6rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: relative;
+    top: -6.5rem;
+    right: 3rem;
+  }
+
+  .creativeTech {
+    position: relative;
+    right: 6rem;
+    top: -2.5rem;
+  }
+
+  .frontDev {
+    position: relative;
+    top: 0.5rem;
+    right: 5rem;
+  }
+
+  .uIDesigner {
+    position: relative;
+    top: -2.5rem;
+    right: 4.5rem;
+  }
+
+  .webDev {
+    position: relative;
+    top: -6rem;
+    right: 4rem;
   }
 }
 
@@ -149,24 +273,33 @@ html {
   .heading {
     font-size: 2.8rem;
     padding-bottom: 1.3rem;
-    border-bottom: 3px solid #b44819;
+    border-bottom: 4px solid #b44819;
     width: 440px;
     position: relative;
     left: -10%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .polaroid {
     width: 480px;
     display: block;
     margin: 0 auto;
     position: relative;
-    left: -9.5rem;
+    left: -7rem;
     top: -6rem;
   }
 
   .nameTag {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     display: block;
     position: relative;
     top: -14rem;
@@ -179,7 +312,45 @@ html {
     margin: 0 auto;
     position: absolute;
     top: -24rem;
-    left: -7.5rem;
+    left: -6rem;
+  }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.6rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: relative;
+    top: -5rem;
+    right: 2rem;
+  }
+
+  .creativeTech {
+    position: relative;
+    right: 5rem;
+    top: -1rem;
+  }
+
+  .frontDev {
+    position: relative;
+    top: 2rem;
+    right: 5rem;
+  }
+
+  .uIDesigner {
+    position: relative;
+    top: -0.5rem;
+    right: 4rem;
+  }
+
+  .webDev {
+    position: relative;
+    top: -4rem;
+    right: 3rem;
   }
 }
 
@@ -187,11 +358,20 @@ html {
   .heading {
     font-size: 2.8rem;
     padding-bottom: 1.3rem;
-    border-bottom: 3px solid #b44819;
+    border-bottom: 4px solid #b44819;
     width: 440px;
     position: relative;
-    left: -8%;
+    left: 0%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .polaroid {
     left: -8.5rem;
@@ -200,6 +380,44 @@ html {
   .nameTag {
     top: -14rem;
     right: 5rem;
+  }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.6rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: relative;
+    top: -5rem;
+    right: 3rem;
+  }
+
+  .creativeTech {
+    position: relative;
+    right: 6rem;
+    top: -0.5rem;
+  }
+
+  .frontDev {
+    position: relative;
+    top: 2rem;
+    right: 5rem;
+  }
+
+  .uIDesigner {
+    position: relative;
+    top: -0.5rem;
+    right: 4.5rem;
+  }
+
+  .webDev {
+    position: relative;
+    top: -4.5rem;
+    right: 4rem;
   }
 
   .orangeBubble {
@@ -214,13 +432,22 @@ html {
 
 @media (min-width: 601px) and (max-width: 650px) {
   .heading {
-    font-size: 2.8rem;
+    font-size: 3rem;
     padding-bottom: 1.3rem;
-    border-bottom: 3px solid #b44819;
-    width: 440px;
+    border-bottom: 4px solid #b44819;
+    width: 500px;
     position: relative;
     left: 0%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .polaroid {
     width: 520px;
@@ -254,17 +481,64 @@ html {
     top: -25.5rem;
     left: -7.5rem;
   }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: relative;
+    top: -5rem;
+    right: 2.5rem;
+  }
+
+  .creativeTech {
+    position: relative;
+    right: 5rem;
+    top: -0.5rem;
+  }
+
+  .frontDev {
+    position: relative;
+    top: 2rem;
+    right: 3.5rem;
+  }
+
+  .uIDesigner {
+    position: relative;
+    top: -0.5rem;
+    right: 1.5rem;
+  }
+
+  .webDev {
+    position: relative;
+    top: -4.5rem;
+    right: 0;
+  }
 }
 
 @media (min-width: 651px) and (max-width: 700px) {
   .heading {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     padding-bottom: 1.3rem;
-    border-bottom: 3px solid #b44819;
-    width: 440px;
+    border-bottom: 4px solid #b44819;
+    width: 550px;
     position: relative;
     left: 0%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .polaroid {
     width: 520px;
@@ -298,17 +572,64 @@ html {
     top: -25.5rem;
     left: -8.5rem;
   }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: relative;
+    top: -6rem;
+    right: 2.5rem;
+  }
+
+  .creativeTech {
+    position: relative;
+    right: 5rem;
+    top: -1rem;
+  }
+
+  .frontDev {
+    position: relative;
+    top: 2rem;
+    right: 3rem;
+  }
+
+  .uIDesigner {
+    position: relative;
+    top: -0.5rem;
+    right: 0rem;
+  }
+
+  .webDev {
+    position: relative;
+    top: -4.5rem;
+    left: 1.5rem;
+  }
 }
 
 @media (min-width: 701px) and (max-width: 800px) {
   .heading {
-    font-size: 3rem;
+    font-size: 3.2rem;
     padding-bottom: 1.3rem;
-    border-bottom: 3px solid #b44819;
-    width: 470px;
+    border-bottom: 4px solid #b44819;
+    width: 550px;
     position: relative;
     left: 0%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .polaroid {
     width: 540px;
@@ -335,12 +656,50 @@ html {
   }
 
   .orangeBubble {
-    width: 980px;
+    width: 1100px;
     display: block;
     margin: 0 auto;
     position: absolute;
-    top: -25.5rem;
-    left: -10rem;
+    top: -26rem;
+    left: -12rem;
+  }
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 1.1rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: relative;
+    top: -5.5rem;
+    right: 1.5rem;
+  }
+
+  .creativeTech {
+    position: relative;
+    right: 4rem;
+    top: 1rem;
+  }
+
+  .frontDev {
+    position: relative;
+    top: 4.5rem;
+    right: 2.5rem;
+    width: 200px;
+  }
+
+  .uIDesigner {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+  }
+
+  .webDev {
+    position: relative;
+    top: -3.5rem;
+    left: 1.5rem;
   }
 }
 
@@ -348,11 +707,20 @@ html {
   .heading {
     font-size: 3.3rem;
     padding-bottom: 1.3rem;
-    border-bottom: 3px solid #b44819;
-    width: 520px;
+    border-bottom: 4px solid #b44819;
+    width: 600px;
     position: relative;
     left: 0%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .flexContainer {
     display: flex;
@@ -376,7 +744,7 @@ html {
     width: 750px;
     position: relative;
     top: -6rem;
-    left: -16rem;
+    left: -13rem;
   }
 
   .polaroidContainer {
@@ -391,15 +759,56 @@ html {
   .polaroid {
     max-width: 550px;
     position: relative;
-    top: -11rem;
-    left: 9rem;
+    top: -10rem;
+    left: 15rem;
   }
 
   .nameTag {
     width: 400px;
     position: relative;
     top: -18rem;
-    left: 20rem;
+    left: 24rem;
+  }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.9rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: absolute;
+    top: 17rem;
+    right: 34rem;
+  }
+
+  .creativeTech {
+    position: absolute;
+    right: 24rem;
+    top: 21.5rem;
+  }
+
+  .frontDev {
+    position: absolute;
+    top: 20rem;
+    right: 12rem;
+    max-width: 150px;
+  }
+
+  .uIDesigner {
+    position: absolute;
+    top: 18rem;
+    right: 3rem;
+    max-width: 100px;
+  }
+
+  .webDev {
+    position: absolute;
+    top: 20rem;
+    right: -6rem;
+    max-width: 100px;
   }
 }
 
@@ -407,11 +816,20 @@ html {
   .heading {
     font-size: 3.5rem;
     padding-bottom: 1.3rem;
-    border-bottom: 3px solid #b44819;
-    width: 600px;
+    border-bottom: 4px solid #b44819;
+    width: 650px;
     position: relative;
     left: 0%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .flexContainer {
     display: flex;
@@ -434,8 +852,8 @@ html {
   .orangeBubble {
     width: 850px;
     position: relative;
-    top: -6rem;
-    left: -15rem;
+    top: -7.5rem;
+    left: -13.5rem;
   }
 
   .polaroidContainer {
@@ -460,17 +878,67 @@ html {
     top: -18.5rem;
     left: 25rem;
   }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.9rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: absolute;
+    top: 17rem;
+    right: 37rem;
+  }
+
+  .creativeTech {
+    position: absolute;
+    right: 27rem;
+    top: 22.5rem;
+  }
+
+  .frontDev {
+    position: absolute;
+    top: 21rem;
+    right: 13.5rem;
+    max-width: 150px;
+  }
+
+  .uIDesigner {
+    position: absolute;
+    top: 21rem;
+    right: 3rem;
+    max-width: 100px;
+  }
+
+  .webDev {
+    position: absolute;
+    top: 20rem;
+    right: -8.5rem;
+    max-width: 100px;
+  }
 }
 
 @media (min-width: 1001px) and (max-width: 1250px) {
   .heading {
-    font-size: 3.8rem;
-    padding-bottom: 1.3rem;
+    font-size: 3.6rem;
+    padding-bottom: 1rem;
     border-bottom: 4px solid #b44819;
-    width: 600px;
+    width: 680px;
     position: relative;
     left: 0%;
   }
+
+  /* .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  } */
 
   .flexContainer {
     display: flex;
@@ -491,9 +959,9 @@ html {
   }
 
   .orangeBubble {
-    width: 950px;
+    width: 900px;
     position: relative;
-    top: -6rem;
+    top: -9rem;
     left: -16rem;
   }
 
@@ -519,16 +987,66 @@ html {
     top: -18rem;
     left: 24rem;
   }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: absolute;
+    top: 18rem;
+    right: 40.5rem;
+  }
+
+  .creativeTech {
+    position: absolute;
+    right: 29rem;
+    top: 22.7rem;
+  }
+
+  .frontDev {
+    position: absolute;
+    top: 21rem;
+    right: 14rem;
+    max-width: 150px;
+  }
+
+  .uIDesigner {
+    position: absolute;
+    top: 22rem;
+    right: 2rem;
+    max-width: 100px;
+  }
+
+  .webDev {
+    position: absolute;
+    top: 19rem;
+    right: -10rem;
+    max-width: 100px;
+  }
 }
 
-@media (min-width: 1251px) and (max-width: 1700px) {
+@media (min-width: 1251px) and (max-width: 1500px) {
   .heading {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
     padding-bottom: 1.3rem;
-    border-bottom: 4px solid #b44819;
-    width: 600px;
+    border-bottom: 0px solid #b44819;
+    width: 1100px;
     position: relative;
     left: 0%;
+  }
+
+  .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
   }
 
   .flexContainer {
@@ -552,7 +1070,7 @@ html {
   .orangeBubble {
     width: 1000px;
     position: relative;
-    top: -6.5rem;
+    top: -7.5rem;
     left: -16rem;
   }
 
@@ -578,60 +1096,154 @@ html {
     top: -18rem;
     left: 27rem;
   }
-}
-/* .heading {
-  font-size: 3.8rem;
-  padding-bottom: 1.3rem;
-  border-bottom: 4px solid #b44819;
-  width: 600px;
-  position: relative;
-  left: 0%;
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 1rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: absolute;
+    top: 20rem;
+    right: 45rem;
+  }
+
+  .creativeTech {
+    position: absolute;
+    right: 34rem;
+    top: 25rem;
+  }
+
+  .frontDev {
+    position: absolute;
+    top: 24.5rem;
+    right: 15rem;
+    max-width: 150px;
+  }
+
+  .uIDesigner {
+    position: absolute;
+    top: 23rem;
+    right: 0rem;
+    max-width: 100px;
+  }
+
+  .webDev {
+    position: absolute;
+    top: 19rem;
+    right: -15rem;
+    max-width: 100px;
+  }
 }
 
-.flexContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 4rem;
-  position: relative;
-  margin-top: 4rem;
-}
+@media (min-width: 1501px) and (max-width: 1750px) {
+  .heading {
+    font-size: 4rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 0px solid #b44819;
+    width: 1200px;
+    position: relative;
+    left: 0%;
+  }
 
-.orangeBubbleContainer {
-  position: relative;
-  flex: 1;
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
-}
+  .line {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #b44819;
+    margin: 0 15px;
+    vertical-align: middle;
+  }
 
-.orangeBubble {
-  width: 1000px;
-  position: relative;
-  top: -6.5rem;
-  left: -16rem;
-}
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    margin-top: 4rem;
+  }
 
-.polaroidContainer {
-  flex: 1;
-  max-width: 45%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .orangeBubbleContainer {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
 
-.polaroid {
-  width: 510px;
-  position: relative;
-  top: -10rem;
-  left: 16rem;
-}
+  .orangeBubble {
+    width: 1000px;
+    position: relative;
+    top: -9rem;
+    left: -16rem;
+  }
 
-.nameTag {
-  width: 410px;
-  position: relative;
-  top: -18rem;
-  left: 27rem;
-} */
+  .polaroidContainer {
+    flex: 1;
+    max-width: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .polaroid {
+    width: 510px;
+    position: relative;
+    top: -13rem;
+    left: 16rem;
+  }
+
+  .nameTag {
+    width: 410px;
+    position: relative;
+    top: -18rem;
+    left: 27rem;
+  }
+
+  .jobs {
+    order: 3;
+    color: #222;
+    font-family: "Boldonse", system-ui;
+    font-size: 1.2rem;
+    display: flex;
+  }
+
+  .prodDesign {
+    position: absolute;
+    top: 18rem;
+    right: 48rem;
+  }
+
+  .creativeTech {
+    position: absolute;
+    right: 33rem;
+    top: 24.5rem;
+  }
+
+  .frontDev {
+    position: absolute;
+    top: 23.5rem;
+    right: 15rem;
+    max-width: 150px;
+  }
+
+  .uIDesigner {
+    position: absolute;
+    top: 23.5rem;
+    right: -1rem;
+    max-width: 100px;
+  }
+
+  .webDev {
+    position: absolute;
+    top: 19rem;
+    right: -18rem;
+    max-width: 100px;
+  }
+}

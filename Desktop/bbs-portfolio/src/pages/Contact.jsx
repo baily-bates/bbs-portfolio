@@ -26,7 +26,11 @@ const Contact = () => {
         />
       </div>
       <section className={styles.info}>
-        <h1 className={styles.heading}>Lets Connect</h1>
+        <h1 className={styles.heading}>
+          <span className={styles.line}></span>
+          Lets Connect
+          <span className={styles.line}></span>
+        </h1>
         <p>Located in Panama City Beach, FL</p>
         <p>Email: batesbailydev@gmail.com</p>
         <p>Phone: (808) 927-4144</p>

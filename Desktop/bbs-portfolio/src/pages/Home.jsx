@@ -8,7 +8,11 @@ const Home = () => {
   return (
     <div className={styles.mainContainer}>
       <header>
-        <h1 className={styles.heading}>Meet the Designer & Developer</h1>
+        <h1 className={styles.heading}>
+          <span className={styles.line}></span>
+          Meet the Designer & Developer
+          <span className={styles.line}></span>
+        </h1>
       </header>
       <main className={styles.flexContainer}>
         <div className={styles.orangeBubbleContainer}>
@@ -31,6 +35,13 @@ const Home = () => {
             className={styles.nameTag}
           />
         </div>
+        <section className={styles.jobs}>
+          <h3 className={styles.prodDesign}>Product Designer</h3>
+          <h3 className={styles.creativeTech}>Creative Technologist</h3>
+          <h3 className={styles.frontDev}>Front-end Engineer</h3>
+          <h3 className={styles.uIDesigner}>UX/UI Designer</h3>
+          <h3 className={styles.webDev}>Web Developer</h3>
+        </section>
       </main>
     </div>
   );

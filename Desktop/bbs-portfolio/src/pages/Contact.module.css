@@ -251,6 +251,15 @@ nav {
     z-index: 0;
     margin: 0;
   }
+
+  .postIt {
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: -15.5rem;
+    left: -2rem;
+    z-index: 9;
+  }
 }
 
 @media (max-width: 499px) and (min-width: 451px) {
@@ -493,7 +502,7 @@ nav {
     width: 140px;
     height: 140px;
     right: 8rem;
-    top: 23rem;
+    top: 2rem;
   }
 
   .info {
